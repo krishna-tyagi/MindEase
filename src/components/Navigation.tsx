@@ -9,13 +9,13 @@ export const Navigation: React.FC = () => {
   if (!user) return null;
 
   return (
-    <nav className="bg-card shadow-card border-b border-border px-6 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="floating-navbar glass">
+      <div className="flex items-center justify-between w-full max-w-6xl">
         <div className="flex items-center space-x-4">
-          <h1 className="text-xl font-bold hero-text">
+          <h1 className="text-xl font-serif font-bold hero-text">
             MindCare AI
           </h1>
-          <span className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full">
+          <span className="text-sm glass text-foreground px-3 py-1 rounded-full font-medium">
             {user.role.charAt(0).toUpperCase() + user.role.slice(1)}
           </span>
         </div>
@@ -26,7 +26,7 @@ export const Navigation: React.FC = () => {
             <span>{user.name}</span>
           </div>
           <Button 
-            variant="ghost" 
+            variant="glass" 
             size="sm" 
             onClick={logout}
             className="flex items-center space-x-2"

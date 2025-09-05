@@ -14,10 +14,14 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px'
+				'2xl': '1150px'
 			}
 		},
 		extend: {
+			fontFamily: {
+				'serif': ['Playfair Display', 'Georgia', 'serif'],
+				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -73,6 +77,9 @@ export default {
 				}
 			},
 			borderRadius: {
+				'nature': 'var(--radius)',
+				'nature-lg': 'var(--radius-lg)',
+				'nature-xl': 'var(--radius-xl)',
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'

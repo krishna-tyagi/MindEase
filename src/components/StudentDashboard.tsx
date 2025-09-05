@@ -59,13 +59,13 @@ export const StudentDashboard: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 space-y-6">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold hero-text mb-2">Student Dashboard</h1>
+        <h1 className="text-3xl font-serif font-bold hero-text mb-2">Student Dashboard</h1>
         <p className="text-muted-foreground">Your personal mental health companion</p>
       </div>
 
       {/* Quick Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <Card className="gradient-card shadow-card">
+        <Card className="glass rounded-nature shadow-card">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium flex items-center">
               <Heart className="w-4 h-4 mr-2 text-success" />
@@ -78,7 +78,7 @@ export const StudentDashboard: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="gradient-card shadow-card">
+        <Card className="glass rounded-nature shadow-card">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium flex items-center">
               <TrendingUp className="w-4 h-4 mr-2 text-primary" />
@@ -91,7 +91,7 @@ export const StudentDashboard: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="gradient-card shadow-card">
+        <Card className="glass rounded-nature shadow-card">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium flex items-center">
               <PenTool className="w-4 h-4 mr-2 text-accent-foreground" />
@@ -104,7 +104,7 @@ export const StudentDashboard: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="gradient-card shadow-card">
+        <Card className="glass rounded-nature shadow-card">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium flex items-center">
               <Clock className="w-4 h-4 mr-2 text-warning" />
@@ -122,9 +122,9 @@ export const StudentDashboard: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Journaling Section */}
         <div className="lg:col-span-2">
-          <Card className="gradient-card shadow-card">
+          <Card className="glass rounded-nature shadow-card">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <CardTitle className="flex items-center font-serif">
                 <PenTool className="w-5 h-5 mr-2 text-primary" />
                 Digital Journal
               </CardTitle>
@@ -156,10 +156,10 @@ export const StudentDashboard: React.FC = () => {
                 placeholder="What's on your mind today? Write about your feelings, experiences, or anything you'd like to reflect on..."
                 value={journalEntry}
                 onChange={(e) => setJournalEntry(e.target.value)}
-                className="min-h-32"
+                className="min-h-32 rounded-nature"
               />
               
-              <Button onClick={saveJournalEntry} className="w-full" variant="hero">
+              <Button onClick={saveJournalEntry} className="w-full" variant="default">
                 <Plus className="w-4 h-4 mr-2" />
                 Save Entry
               </Button>
@@ -168,14 +168,14 @@ export const StudentDashboard: React.FC = () => {
 
           {/* Recent Journal Entries */}
           {journalEntries.length > 0 && (
-            <Card className="gradient-card shadow-card mt-6">
+            <Card className="glass rounded-nature shadow-card mt-6">
               <CardHeader>
-                <CardTitle>Recent Entries</CardTitle>
+                <CardTitle className="font-serif">Recent Entries</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4 max-h-64 overflow-y-auto">
                   {journalEntries.slice(0, 3).map((entry) => (
-                    <div key={entry.id} className="p-3 bg-muted/50 rounded-lg">
+                    <div key={entry.id} className="p-3 glass rounded-nature">
                       <div className="flex justify-between items-center mb-2">
                         <span className="text-sm text-muted-foreground">{entry.date}</span>
                         <Badge variant="secondary">Mood: {entry.mood}/10</Badge>
@@ -191,9 +191,9 @@ export const StudentDashboard: React.FC = () => {
 
         {/* Quick Actions */}
         <div className="space-y-6">
-          <Card className="gradient-card shadow-card">
+          <Card className="glass rounded-nature shadow-card">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <CardTitle className="flex items-center font-serif">
                 <Brain className="w-5 h-5 mr-2 text-primary" />
                 AI Chatbot
               </CardTitle>
@@ -209,9 +209,9 @@ export const StudentDashboard: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="gradient-card shadow-card">
+          <Card className="glass rounded-nature shadow-card">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <CardTitle className="flex items-center font-serif">
                 <Heart className="w-5 h-5 mr-2 text-success" />
                 Quick Assessment
               </CardTitle>
@@ -226,9 +226,9 @@ export const StudentDashboard: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="gradient-card shadow-card">
+          <Card className="glass rounded-nature shadow-card">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <CardTitle className="flex items-center font-serif">
                 <Calendar className="w-5 h-5 mr-2 text-warning" />
                 Book Session
               </CardTitle>
@@ -243,9 +243,9 @@ export const StudentDashboard: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="gradient-card shadow-card">
+          <Card className="glass rounded-nature shadow-card">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <CardTitle className="flex items-center font-serif">
                 <BookOpen className="w-5 h-5 mr-2 text-primary" />
                 Resource Hub
               </CardTitle>
@@ -260,9 +260,9 @@ export const StudentDashboard: React.FC = () => {
             </CardContent>
           </Card>
 
-          <Card className="gradient-card shadow-card">
+          <Card className="glass rounded-nature shadow-card">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <CardTitle className="flex items-center font-serif">
                 <Users className="w-5 h-5 mr-2 text-secondary-foreground" />
                 Peer Forum
               </CardTitle>

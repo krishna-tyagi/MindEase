@@ -98,38 +98,38 @@ export const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative gradient-hero py-20 px-6">
+      <section className="relative gradient-hero min-h-screen flex items-center justify-center px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
             AI to guide → Humans to heal
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted mb-8 max-w-3xl mx-auto font-medium">
             A context-aware psychological intervention system that combines AI efficiency 
             with human empathy for comprehensive mental health support.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              variant="hero" 
+              variant="default" 
               size="lg" 
               onClick={() => handleLoginClick('student')}
-              className="bg-white text-primary hover:bg-white/90"
+              className="px-8 py-4 text-lg font-semibold"
             >
               Login as Student
             </Button>
             <Button 
-              variant="outline" 
+              variant="glass" 
               size="lg" 
               onClick={() => handleLoginClick('admin')}
-              className="border-white text-white hover:bg-white hover:text-primary"
+              className="px-8 py-4 text-lg font-semibold"
             >
               Login as Admin
             </Button>
             <Button 
-              variant="outline" 
+              variant="glass" 
               size="lg" 
               onClick={() => handleLoginClick('volunteer')}
-              className="border-white text-white hover:bg-white hover:text-primary"
+              className="px-8 py-4 text-lg font-semibold"
             >
               Login as Volunteer
             </Button>
@@ -138,10 +138,10 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-6 bg-muted/30">
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 hero-text">
+          <div className="text-center mb-16 glass-strong rounded-nature-lg p-12">
+            <h2 className="text-4xl font-serif font-bold mb-4 hero-text">
               Interactive MVP Features
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -167,7 +167,7 @@ export const LandingPage: React.FC = () => {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 hero-text">
+            <h2 className="text-4xl font-serif font-bold mb-4 hero-text">
               Long-Term Vision
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -178,7 +178,7 @@ export const LandingPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {visionPoints.map((point, index) => (
               <div key={index} className="text-center group">
-                <div className="mx-auto mb-6 w-20 h-20 rounded-full gradient-card shadow-card flex items-center justify-center group-hover:shadow-glow transition-smooth">
+                <div className="mx-auto mb-6 w-20 h-20 rounded-full glass shadow-card flex items-center justify-center group-hover:shadow-glow transition-smooth">
                   <point.icon className="w-10 h-10 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{point.title}</h3>
@@ -190,29 +190,29 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 gradient-hero">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center glass-strong rounded-nature-lg p-16">
+          <h2 className="text-4xl font-serif font-bold text-foreground mb-6">
             Ready to Transform Mental Health Support?
           </h2>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-muted mb-8">
             Join our mission to create a more empathetic and effective mental health ecosystem
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              variant="hero" 
+              variant="default" 
               size="lg"
               onClick={() => handleLoginClick('student')}
-              className="bg-white text-primary hover:bg-white/90"
+              className="px-8 py-4 text-lg font-semibold"
             >
               Get Started
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button 
-              variant="outline" 
+              variant="glass" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary"
+              className="px-8 py-4 text-lg font-semibold"
             >
               Learn More
             </Button>
@@ -221,10 +221,10 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-card border-t border-border">
+      <footer className="py-12 px-6 glass border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6">
-            <h3 className="text-lg font-bold hero-text mb-2">MindCare AI</h3>
+            <h3 className="text-lg font-serif font-bold hero-text mb-2">MindCare AI</h3>
             <p className="text-sm text-muted-foreground">
               Demo site — GDPR-style privacy, anonymity, and human escalation emphasized
             </p>

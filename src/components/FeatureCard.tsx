@@ -23,23 +23,23 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <Card 
       className={cn(
-        "feature-card gradient-card border-0 shadow-card",
+        "feature-card glass rounded-nature",
         isExpanded && "scale-105 shadow-glow",
         className
       )}
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <CardHeader className="text-center">
-        <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="mx-auto mb-4 w-16 h-16 rounded-full glass-strong flex items-center justify-center">
           <Icon className="w-8 h-8 text-primary" />
         </div>
-        <CardTitle className="text-lg font-bold text-foreground">{title}</CardTitle>
+        <CardTitle className="text-lg font-serif font-bold text-foreground">{title}</CardTitle>
         <CardDescription className="text-muted-foreground">{description}</CardDescription>
       </CardHeader>
       
       {isExpanded && expandedContent && (
         <CardContent className="pt-0">
-          <div className="p-4 bg-accent/50 rounded-lg border border-accent">
+          <div className="p-4 glass rounded-nature border border-accent">
             <p className="text-sm text-accent-foreground">{expandedContent}</p>
           </div>
         </CardContent>
