@@ -105,7 +105,7 @@ export const LandingPage: React.FC = () => {
           </h1>
           <p className="text-xl md:text-2xl text-muted mb-8 max-w-3xl mx-auto font-medium">
             A context-aware psychological intervention system that combines AI efficiency 
-            with human empathy for comprehensive mental health support.
+            with human empathy for comprehensive mental health support. By Team- MindShort (MST388)
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -224,7 +224,7 @@ export const LandingPage: React.FC = () => {
       <footer className="py-12 px-6 glass border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6">
-            <h3 className="text-lg font-serif font-bold hero-text mb-2">MindCare AI</h3>
+            <h3 className="text-lg font-serif font-bold hero-text mb-2">MindEase AI by Team Mindshort(MST388)</h3>
             <p className="text-sm text-muted-foreground">
               Demo site — GDPR-style privacy, anonymity, and human escalation emphasized
             </p>
