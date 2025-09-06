@@ -65,7 +65,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, default
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-center">Login</DialogTitle>
+          <DialogTitle className="text-2xl font-bold text-center">Login to MindEase</DialogTitle>
           <DialogDescription className="text-center">
             Access your psychological intervention dashboard
           </DialogDescription>
