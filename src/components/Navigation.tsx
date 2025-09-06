@@ -13,7 +13,7 @@ export const Navigation: React.FC = () => {
       <div className="flex items-center justify-between w-full max-w-6xl">
         <div className="flex items-center space-x-4">
           <h1 className="text-xl font-serif font-bold hero-text">
-            MindCare AI
+            MindEase AI
           </h1>
           <span className="text-sm glass text-foreground px-3 py-1 rounded-full font-medium">
             {user.role.charAt(0).toUpperCase() + user.role.slice(1)}
